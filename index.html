@@ -324,7 +324,9 @@
   /* OBLASTI */
   .areas { background: var(--paper-2); }
   .areas-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; align-items: start; }
-  .areas-aside { position: sticky; top: 128px; }
+  .areas-aside { position: sticky; top: 128px; container-type: inline-size; }
+  .h2-2l span { display: block; white-space: nowrap; }
+  .areas-aside .h2-2l { font-size: clamp(24px, 11.6cqi, 56px); }
   .areas-aside .lead { margin-bottom: 32px; }
   .also { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 16px; color: var(--text-muted); }
   .also b { display: block; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-ink); margin-bottom: 8px; }
@@ -781,7 +783,7 @@
   <div class="wrap areas-grid">
     <aside class="areas-aside rv">
       <span class="eyebrow">Oblasti rada</span>
-      <h2 class="h2">Posvećeni uspehu <em>naših klijenata.</em></h2>
+      <h2 class="h2 h2-2l"><span>Posvećeni uspehu</span><span><em>naših klijenata.</em></span></h2>
       <p class="lead">Pravne usluge pružamo domaćim i stranim firmama, organizacijama i fizičkim licima. Otvorite oblast da vidite šta tačno radimo.</p>
       <a href="#kontakt" class="btn btn-primary">Opišite nam svoj slučaj <svg><use href="#arrow"/></svg></a>
       <div class="also"><b>Takođe radimo</b>Radno pravo &middot; Upravno pravo &middot; Naknada štete &middot; Imovinski odnosi &middot; Alimentacija &middot; IT pravo</div>
